@@ -1,0 +1,4659 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+#getDishForm {
+	top:-4px;
+	left:100px;
+	width:auto;
+}
+#addDishForm {
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+    left:250px;
+}
+#instructions_label {
+	left:-5px;
+}
+#dish_name {
+	top:-26px;
+	left: 162px;
+}
+#calories {
+	top:-26px;
+	left: 162px;
+}
+#ingredients {
+	top:-26px;
+	left: 162px;
+}
+#meal_time_label {
+	left: -6px;
+}
+#addDish_mealtime {
+	top:-26px;
+	left: 162px;
+}
+
+#instructions {
+	top:-26px;
+	left: 162px;
+}
+.submitButton {
+	background-color: rgb(26,45,60,255); 
+	color: antiquewhite; 
+	padding: 8px;
+	font-size: 20px;
+	border: none;
+	font-family: 'Louis_George_Cafe';
+}
+.submitButton:hover {
+	background-color: rgb(26,100,60,255); 
+}
+.logo {
+    background-image: url(LetsCook_Logo.png);
+    width: 300px; 
+    position:relative; 
+    left: 49px; 
+    top: 104px;
+}
+.frontCover {
+    background-image: url(food20.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+.aboutLetsCookCover {
+    background-image: url(food2.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: 50% 62%; 
+}
+.allRecipesLookupCover {
+    background-image: url(reading.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: 19% -97px;
+}
+.recipeNameLookupCover {
+    background-image: url(learningCook.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+.addRecipeCover {
+    background-image: url(writing.jpg);
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+@font-face {
+    font-family: Hilton;
+    src: url(Hilton.ttf);
+}
+@font-face {
+    font-family: Louis_George_Cafe;
+    src: url(Louis\ George\ Cafe\ Bold.ttf);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+h1 {
+    font-size: 40px;
+    position:relative;
+    font-family: Louis_George_Cafe;
+    letter-spacing: 3px;
+    color:antiquewhite;
+}
+
+h2 {
+
+    font-size: 20px;
+    position:relative;
+    font-family: Hilton;
+    letter-spacing: 3px;
+}
+p, form {
+    font-family:Louis_George_Cafe;
+    color: rgb(32,44,60);
+    font-size:28px;
+    position: relative;
+    left:100px;
+    padding-bottom: 40px;
+}
+.toolbarButton {
+    background: none;
+    font-family: Louis G;
+    font-size:17px;
+    top:-4px;
+    outline:none; 
+    border:none;
+    position: relative;
+    display: inline;
+    color:rgb(243,213,182,255);
+    font-family: Louis_George_Cafe;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.toolbarButton:hover {
+    background-color: rgb(26,100,60,255);
+    
+}
+
+input[type=text] {
+    position: relative;
+}
+
+label {
+    position: relative;
+    padding-right:20px;
+}
+
+@media screen and (min-width:1349px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:685px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: 85px;
+	}
+	#lookupRecipe {
+		left: 25px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -25px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -80px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:505px;
+	}
+	#github {
+		font-size:14px;
+		left:445px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:385px;
+	}
+	#resume {
+		font-size:14px;
+		left:325px;
+	}
+}
+@media screen and (max-width:1348px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:685px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: 85px;
+	}
+	#lookupRecipe {
+		left: 25px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -25px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -80px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:505px;
+	}
+	#github {
+		font-size:14px;
+		left:445px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:385px;
+	}
+	#resume {
+		font-size:14px;
+		left:325px;
+	}
+}
+
+@media screen and (max-width:1291px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:595px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: 40px;
+	}
+	#lookupRecipe {
+		left: 0px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -40px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -80px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:320px;
+	}
+	#github {
+		font-size:14px;
+		left:280px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:240px;
+	}
+	#resume {
+		font-size:14px;
+		left:200px;
+	}
+}
+
+@media screen and (max-width:1202px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:595px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: 40px;
+	}
+	#lookupRecipe {
+		left: 0px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -40px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -80px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:320px;
+	}
+	#github {
+		font-size:14px;
+		left:280px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:240px;
+	}
+	#resume {
+		font-size:14px;
+		left:200px;
+	}
+}
+
+@media screen and (max-width:1102px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		left: 170px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:482px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -65px;
+	}
+	#lookupRecipe {
+		left: -85px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -105px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -120px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:200px;
+	}
+	#github {
+		font-size:14px;
+		left:160px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:120px;
+	}
+	#resume {
+		font-size:14px;
+		left:80px;
+	}
+}
+
+@media screen and (max-width:1041px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:467px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -80px;
+	}
+	#lookupRecipe {
+		left: -100px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -113px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -120px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:120px;
+	}
+	#github {
+		font-size:14px;
+		left:100px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:80px;
+	}
+	#resume {
+		font-size:14px;
+		left:60px;
+	}
+}
+
+@media screen and (min-width:965px) and (max-width:970px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:448px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -95px;
+	}
+	#lookupRecipe {
+		left: -105px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -115px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -120px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:110px;
+	}
+	#github {
+		font-size:14px;
+		left:90px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:70px;
+	}
+	#resume {
+		font-size:14px;
+		left:50px;
+	}
+}
+
+@media screen and (min-width:941px) and (max-width:964px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:448px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -95px;
+	}
+	#lookupRecipe {
+		left: -105px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -115px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -120px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:110px;
+	}
+	#github {
+		font-size:14px;
+		left:90px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:70px;
+	}
+	#resume {
+		font-size:14px;
+		left:50px;
+	}
+}
+
+@media screen and (max-width:940px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:448px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -95px;
+	}
+	#lookupRecipe {
+		left: -105px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -115px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -120px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:110px;
+	}
+	#github {
+		font-size:14px;
+		left:90px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:70px;
+	}
+	#resume {
+		font-size:14px;
+		left:50px;
+	}
+}
+
+@media screen and (max-width:902px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		left:118px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 30px; 
+		left:430px;
+	}
+	#addRecipe {
+		font-size:14px;
+		left: -101px;
+	}
+	#lookupRecipe {
+		left: -104px;
+		font-size:14px;
+	}
+	#getAllRecipes {
+		font-size:14px;
+		left: -107px;
+	}
+	#aboutLetsCook {
+		font-size:14px;
+		left: -110px;
+	}
+	#aboutMe {
+		font-size:14px;
+		left:24px;
+	}
+	#github {
+		font-size:14px;
+		left:21px;
+	}
+	#linkedin {
+		font-size:14px;
+		left:18px;
+	}
+	#resume {
+		font-size:14px;
+		left:15px;
+	}
+}
+
+@media screen and (max-width:831px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:423px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -60px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -70px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -80px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:100px;
+	}
+	#github {
+		font-size:12px;
+		left:90px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:80px;
+	}
+	#resume {
+		font-size:12px;
+		left:70px;
+	}
+}
+
+@media screen and (min-width:805px) and (max-width: 830px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:386px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:34px;
+	}
+	#github {
+		font-size:12px;
+		left:31px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:28px;
+	}
+	#resume {
+		font-size:12px;
+		left:25px;
+	}
+}
+
+@media screen and (min-width:796px) and (max-width: 804px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:386px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:34px;
+	}
+	#github {
+		font-size:12px;
+		left:31px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:28px;
+	}
+	#resume {
+		font-size:12px;
+		left:25px;
+	}
+}
+@media screen and (min-width: 764px) and (max-width: 795px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:30px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:386px;
+	}
+	#addRecipe {
+		font-size:12px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:12px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:12px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:12px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:12px;
+		left:34px;
+	}
+	#github {
+		font-size:12px;
+		left:31px;
+	}
+	#linkedin {
+		font-size:12px;
+		left:28px;
+	}
+	#resume {
+		font-size:12px;
+		left:25px;
+	}
+}
+
+@media screen and (max-width:763px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:9px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		left:81px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:356px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:26px;
+	}
+	#github {
+		font-size:11px;
+		left:23px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:20px;
+	}
+	#resume {
+		font-size:11px;
+		left:17px;
+	}
+}
+
+@media screen and (max-width:748px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:9px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:356px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:26px;
+	}
+	#github {
+		font-size:11px;
+		left:23px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:20px;
+	}
+	#resume {
+		font-size:11px;
+		left:17px;
+	}
+}
+
+@media screen and (min-width:702px) and (max-width:747px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:9px;
+		width:auto;
+		text-align:center;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:356px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -81px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -84px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -87px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -90px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:26px;
+	}
+	#github {
+		font-size:11px;
+		left:23px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:20px;
+	}
+	#resume {
+		font-size:11px;
+		left:17px;
+	}
+}
+
+@media screen and (max-width:698px) {
+	form {
+		left:22px;
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+		text-align:center;
+	}
+	#addDishForm {
+		left:30px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (max-width:645px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:32px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:100px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		left: 30px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (min-width:603px) and (max-width:627px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:61px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (min-width:598px) and (max-width:602px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:61px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (max-width:597px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:40px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#addDishForm {
+		left:-52px;
+		bottom:43px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:2px;
+	}
+	#github {
+		font-size:11px;
+		left:-3px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-8px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (max-width:537px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:103px;
+		width:280px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:56px;
+		top:95px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:56px;
+		width:auto;
+	}
+	#dish_name_lookup {
+		left:-8px;
+	}
+	#dishname {
+		left:-5px;
+		bottom: 2px;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:325px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:5px;
+	}
+	#github {
+		font-size:11px;
+		left:2px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-1px;
+	}
+	#resume {
+		font-size:11px;
+		left:-13px;
+	}
+}
+
+@media screen and (max-width:497px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:56px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:332px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:490px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:56px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:20px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:331px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:484px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:40px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+		bottom:30px;
+	}
+	#addDishForm {
+		left:-52px;
+		bottom:75px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:347px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:468px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:40px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+		bottom:53px;
+	}
+	#addDishForm {
+		left:-52px;
+		bottom:113px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:339px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+
+@media screen and (max-width:467px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:27px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:339px;
+		top:2px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:8px;
+	}
+	#github {
+		font-size:11px;
+		left:5px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:2px;
+	}
+	#resume {
+		font-size:11px;
+		left:-2px;
+	}
+}
+@media screen and (min-width:435px) and (max-width:438px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:27px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:291px;
+		top:13px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:-62px;
+	}
+	#github {
+		font-size:11px;
+		left:-62px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-62px;
+	}
+	#resume {
+		font-size:11px;
+		left:-62px;
+	}
+}
+@media screen and (max-width:434px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:40px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:antiquewhite;
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:291px;
+		top:13px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:-62px;
+	}
+	#github {
+		font-size:11px;
+		left:-62px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-62px;
+	}
+	#resume {
+		font-size:11px;
+		left:-62px;
+	}
+}
+
+@media screen and (max-width:432px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:30px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:antiquewhite;
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:291px;
+		top:13px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:-62px;
+	}
+	#github {
+		font-size:11px;
+		left:-62px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-62px;
+	}
+	#resume {
+		font-size:11px;
+		left:-62px;
+	}
+}
+
+@media screen and (max-width:420px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:35px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:antiquewhite;
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		left:-88px;
+		bottom:113px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:291px;
+		top:13px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:-62px;
+	}
+	#github {
+		font-size:11px;
+		left:-62px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-62px;
+	}
+	#resume {
+		font-size:11px;
+		left:-62px;
+	}
+}
+
+@media screen and (max-width:388px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:27px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		left:-52px;
+		bottom:43px;
+	}
+	#whocares {
+		display: inline; 
+		color:rgb(243,213,182,255); 
+		font-size: 26px; 
+		left:291px;
+		top:13px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left:-62px;
+	}
+	#github {
+		font-size:11px;
+		left:-62px;
+	}
+	#linkedin {
+		font-size:11px;
+		left:-62px;
+	}
+	#resume {
+		font-size:11px;
+		left:-62px;
+	}
+}
+
+@media screen and (max-width:376px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:26px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:22px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#addDishForm {
+		left:-77px;
+		bottom:112px;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 253px;
+		top: 18px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: -68px;
+	}
+	#github {
+		font-size:11px;
+		left: -69px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -70px;
+	}
+	#resume {
+		font-size:11px;
+		left: -71px;
+	}
+}
+
+@media screen and (max-width:372px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:22px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 248px;
+		top: 25px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -75px;
+		top: -4px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: -68px;
+	}
+	#github {
+		font-size:11px;
+		left: -69px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -70px;
+	}
+	#resume {
+		font-size:11px;
+		left: -71px;
+	}
+}
+
+@media screen and (max-width:368px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:22px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:14px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 225px;
+		top: 3px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: -77px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: -112px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: -68px;
+	}
+	#github {
+		font-size:11px;
+		left: -69px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -70px;
+	}
+	#resume {
+		font-size:11px;
+		left: -71px;
+	}
+}
+
+
+@media screen and (max-width:363px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:16px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:27px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		top:-40px;
+		width:auto;
+	}
+	#addDishForm {
+		left:-83px;
+		bottom:113px;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 166px;
+		top: -35px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 172px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -108px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -102px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -35px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+}
+
+@media screen and (max-width:354px) {
+	form {
+		left:22px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:21px;
+		top:45px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:20px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:27px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		top:-40px;
+		width:auto;
+	}
+	#addDishForm {
+		left:-73px;
+		bottom:113px;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 166px;
+		top: -35px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 169px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -113px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -109px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -35px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+	input[type=text] {
+    	width:141px;
+	}
+}
+
+@media screen and (max-width:338px) {
+	form {
+		left:22px;
+	}
+	#addDishForm {
+		left:-73px;
+		bottom:113px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:9px;
+		top:37px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:16px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 166px;
+		top: -35px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 169px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -113px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -109px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -35px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+	input[type=text] {
+    	width:141px;
+	}
+}
+
+@media screen and (max-width:337px) {
+	form {
+		left:22px;
+	}
+	#addDishForm {
+		left:-73px;
+		bottom:113px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:9px;
+		top:37px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:26px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:16px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 166px;
+		top: -35px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 169px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -113px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -109px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -35px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+	input[type=text] {
+    	width:141px;
+	}
+}
+
+@media screen and (max-width:330px) {
+	form {
+		left:22px;
+	}
+	#addDishForm {
+		left:-69px;
+		bottom:113px;
+	}
+	#toolbarBanner {
+		display: inline-table;
+		width:100%
+	}
+	#logo {
+		top:33px;
+		left:1px;
+		width:265px;
+	}
+	#welcome {
+		font-family:Hilton;
+		text-align:center;
+		left:9px;
+		top:37px;
+		margin-top:0;
+	}
+	#aboutLetsCookText {
+		top:5px;
+		width:auto;
+		text-align:center;
+	}
+	#aboutLetsCookParagraph {
+		width:auto;
+		margin-left:31px;
+		margin-right: 20px;
+		top: -21px;
+		left:0;
+		color:antiquewhite;
+	}
+	#allRecipesText{
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#allRecipesParagraph{
+		left:0;
+		margin-left:28px;
+		margin-top:-17px;
+		width:auto;
+	}
+	#topGetText {
+		top:16px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#topGetParagraph {
+		left:0;
+		margin-left:16px;
+		width:auto;
+	}
+	#addRecipeText {
+		top:0px;
+		width:auto;
+		text-align:center;
+		font-size:30px;
+	}
+	#addRecipeParagraph {
+		color:rgb(26,45,60,255);
+		left:0;
+		margin-left:15px;
+		margin-top:45px;
+		width:auto;
+	}
+	#whocares {
+		display: inline;
+		color:rgb(243,213,182,255);
+		font-size: 26px;
+		left: 220px;
+		top: 31px;
+	}
+	#addRecipe {
+		font-size:11px;
+		left: 166px;
+		top: -35px;
+	}
+	#lookupRecipe {
+		font-size:11px;
+		left: 169px;
+		top:-35px;
+	}
+	#getAllRecipes {
+		font-size:11px;
+		left: -113px;
+	}
+	#aboutLetsCook {
+		font-size:11px;
+		left: -109px;
+	}
+	#aboutMe {
+		font-size:11px;
+		left: 133px;
+		top: -35px;
+	}
+	#github {
+		font-size:11px;
+		left: -169px;
+		top: -4px;
+	}
+	#linkedin {
+		font-size:11px;
+		left: -163px;
+		top: -4px;
+	}
+	#resume {
+		font-size:11px;
+		left: -156px;
+		top: -4px;
+	}
+	input[type=text] {
+    	width:141px;
+	}
+}

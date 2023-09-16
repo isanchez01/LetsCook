@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" th:href="@{/css/base.css}">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script type="text/javascript" th:src="@{/js/scriptingAllRecipes.js}"> </script>
+            <title>LetsCook Website</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
+        <body>
+            <div class="frontCover">
+	        	<div id="toolbarBanner" style="background-color: rgb(26,45,60,255); height:37px;">
+                	<h2 id="whocares">LetsCook</h2>
+	                <input id="aboutLetsCook" class="toolbarButton" type="button" value="About LetsCook">
+	                <input id="getAllRecipes" class="toolbarButton" type="button" value="Get All Recipes">
+	                <input id="lookupRecipe" class="toolbarButton" type="button" value="Lookup a Meal">
+	                <input id="addRecipe" class="toolbarButton" type="button" value="Add a Meal">
+	                <input id="resume" class="toolbarButton" type="button" value="Resume">
+	                <input id="linkedin" class="toolbarButton" type="button" value="LinkedIn">
+	                <input id="github" class="toolbarButton" type="button" value="GitHub">
+	                <input id="aboutMe" class="toolbarButton" type="button" value="About Me">
+	            </div>
+                <img id="logo" class="logo" th:src="@{/css/LetsCook_Logo.png}"/>
+                <h1 id="welcome">Welcome to LetsCook!</h1>
+            </div>
+            <div class="aboutLetsCookCover">
+                <div id="topAbout" style="background-color: rgb(26,45,60,255); height: 100px; position: relative; top: -50px;">
+                    <h1 id="aboutLetsCookText">About LetsCook</h1>
+                </div>
+                <p id="aboutLetsCookParagraph">
+                    Welcome to my LetsCook application! Here, you can look up recipes for various dishes for
+                    all three meals of the day. Whether you're looking for a new start to your day, a change
+                    to your midday meal, or putting a spin on dinner, LetsCook has you covered with oodles of
+                    recipes.
+                </p>
+            </div>
+            <div id="allRecipesLookupCover" class="allRecipesLookupCover">
+                <div id="topAll" style="background-color: rgb(26,45,60,255); height: 100px; position: relative; top: -50px;">
+                    <h1 id="allRecipesText">Can't think of a recipe?</h1>
+                </div>
+                <p id="allRecipesParagraph">
+                    If you'd like to pull up the names of the <br> available recipes for a specific meal time, <br>
+                    please type in the meal time in the box below. <br><br> Options are: Breakfast, Lunch, and Dinner <br><br>
+                    <form action="/allRecipes" method = "get" id="allRecipesForm">
+	                    <label id="meal_time_lookup" for="meal_time_lookup">Time of Meal:</label>
+	                    <input type="text" size="10" id="mealtime" name="mealtime"><br><br>
+	                    <button class="submitButton" type="submit" id="allRecipesButton">Get All Recipes</button>
+	               	</form>
+                </p>
+            </div>
+                <div id="allRecipeResultBanner" style="background-color:rgb(26,100,60,255);height:auto; margin-top: -21px;">
+                	<h2 style="font-family:Louis_George_Cafe;color:antiquewhite;font-size:25px;text-align:center;padding-top:14px">All Recipes Available</h2>
+                	<div style="padding-top:2px;">
+			            <div th:each="recipe : ${recipelist}">
+			            	<h4 style="font-family: 'Louis_George_Cafe';color:antiquewhite;text-align: center;" th:text = "${recipe}"></h4>
+			            </div>
+               		</div>
+	                <br>
+	                <br>
+				</div>
+            <div class="recipeNameLookupCover">
+                <div id="topGet" style="background-color: rgb(26,45,60,255); height: 100px; position: relative; top: -50px;">
+                    <h1 id="topGetText">Found something you'd like to cook?</h1>
+                </div>
+                <p id="topGetParagraph">
+                    To look up a recipe for a dish, type out<br> the name of the dish in the field below
+                    <br>
+                    <br>
+                    <form action="/getDish" method = "get" id="getDishForm">
+                        <label id="dish_name_lookup" for="dish_name_lookup">Dish Name:</label>
+                        <input type="text" size="14" id="dishname" name="dishname"><br><br>
+	                    <button class="submitButton" id="mealLookupButton">Get Recipe</button>
+                    </form>
+                </p>
+            </div>
+            <div class="addRecipeCover">
+                <div id="topAdd" style="background-color: rgb(26,45,60,255); height: 100px; position: relative; top: -50px;">
+                    <h1 id="addRecipeText">Feeling helpful? Add a Recipe to LetsCook!</h1>
+                </div>
+                <p id="addRecipeParagraph">
+                    If you'd like to add in a new recipe <br>to LetsCook, fill out the boxes below<br>with the
+                    info about your dish
+                    <br>
+                    <br>
+					<form action="/addDish" method="post" id="addDishForm">
+	                    <label id="dish_name_label" for="dish_name">Dish Name:</label>
+	                    <input type="text" id ="dish_name" name="dish_name">
+	                    <label id="calories_label" for="calories">Calories:</label>
+	                    <input type="text" id="calories" name="calories">
+	                    <label id="ingredients_label" for="ingredients">Ingredients:</label>
+	                    <input type="text" id="ingredients" name="ingredients">
+	                    <label id="meal_time_label" for="meal_time">Time Served:</label>
+	                    <input type="text" id="addDish_mealtime" name="addDish_mealtime">
+	                    <label id="instructions_label" for="instructions">Instructions:</label>
+	                    <input type="text" id="instructions" name="instructions">
+	                    <button class="submitButton" type="submit" id="addDishButton">Add Dish</button>
+					</form>
+                </p>
+            </div>
+            <div style="background-color: rgb(26,45,60,255); height: 64px; position: relative; top: -50px;">
+
+            </div>
+            <div style="text-align: center;">Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+        </body>
+    </html>
